@@ -17,7 +17,6 @@ sections:
 - type: document
   path: content/garten/*.md
   label: Garten
-  match: "**/*"
 - type: directory
   path: content/post
   label: Blog
