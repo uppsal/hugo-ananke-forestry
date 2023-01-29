@@ -10,18 +10,22 @@ sections:
   create: all
   match: "*"
 - type: directory
+  path: content/about
+  label: About
+  create: all
+  match: "**/*"
+- type: document
+  path: content/garten/*.md
+  label: Garten
+  match: "**/*"
+- type: directory
   path: content/post
-  label: Post
+  label: Blog
   create: documents
   match: "*.md"
   exclude: _index.md
   templates:
   - post
-- type: directory
-  path: content/about
-  label: About
-  create: all
-  match: "**/*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
